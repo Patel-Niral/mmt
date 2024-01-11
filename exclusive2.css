@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    color-scheme:dark ;
+}
+
+
+
+body{
+    /* background: linear-gradient(#1e90ff 20%,#1d0085c4,#000539de);    */
+  background-color: #007dfad2;
+  place-content: center;
+  place-items: center;
+}
+
+header{
+    box-sizing: content-box;
+    margin: 2.5rem;
+    /* background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/m_goa_main_tv_destination_img_1_l_759_1138.jpg) ; */
+    background-color: #332f2fd3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: unset;
+    width: calc(100vw-(margin));
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    place-content: center;
+    place-items: center;
+    grid-auto-flow: column;
+    color: aliceblue;
+    border: 4px ridge;
+    border-radius: 20px;
+}
+
+.place{
+    place-content: center;
+    place-items: center;
+    text-align: justify;
+    margin: 2rem;
+    padding: 3rem;
+    /* backdrop-filter: blur(7px); */
+}
+
+.title{
+    margin: 1.5rem auto;
+}
+.location_details{
+    font-size:3rem ;
+    text-transform: capitalize;
+    backdrop-filter: blur(20px);
+    border-radius: 2rem;
+}
+
+.place_details{
+    box-sizing: border-box;
+    /* font-size: 0.4em;  its same to below*/
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    word-spacing: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.place_img img{
+    box-sizing: border-box;
+    height: 25rem;
+    width: 40rem ;
+    border-radius: 2rem;
+    border: 2px ridge white;
+}
+
+
+/* -- ---------------------------------------------------------------------------------------------  */
+
+.ls{
+    margin: 3rem auto;
+    padding: 7rem;
+    font-size: 1.25rem;
+    /* place-content: center;
+    place-items: center; */
+    color: #ffffff;
+}
+
+.overview{
+    font-size: 1.8rem;
+}
+
+#ptv, #ttd{
+    margin: 4rem auto;
+}
+
+.ptv_title, .ttd_title{
+    font-size: 4rem;
+}
+
+ /* background-color: #01032b; */
+
+ .ptv_details, .ttd_details{
+    background-color: #01032b ;
+    /* font-size: 2.5rem; */
+    height: 16rem;
+    margin: 1.5rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "thumbnail  description" ;
+    gap: 2.5rem;
+    grid-auto-flow: row;
+    border: 3px ridge #fff ;
+    border-radius: 2rem;
+}
+
+.ptv_img img, .ttd_img img{
+    height: 16rem;
+    width: 25rem;
+    /* place-content: center;
+    place-items: center; */
+    border: 2px ridge #fff;
+    border-radius: 1.5rem;
+}
+
+.ptv_img, .ttd_img{
+    grid-area: "thumbnail" ;
+
+}
+
+
+.ptv_det, .ttd_det{
+    grid-area: "description";
+    text-align: left;
+}
+
+.ptv_subtitle, .ttd_subtitle{
+    font-size: 3rem;
+}
+
+.ptv_description, .ttd_description{
+    font-size: 1.4rem;
+    margin: 1.5rem auto;
+    line-height: 1.75rem;
+}
+
+
+/* -------------------------------------only if list is used eg in lakshadweep------------------------------ */
+.ptv_description ul, .ttd_description ul{
+    list-style: inside;
+    line-height: 1.75rem;
+}

@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    color-scheme:dark ;
+}
+
+
+
+body{
+    /* background: linear-gradient(#1e90ff 20%,#1d0085c4,#000539de);    */
+  background-color: #007dfad2;
+  place-content: center;
+  place-items: center;
+}
+
+header{
+    box-sizing: content-box;
+    margin: 2.5rem;
+    /* background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/destimg/mmt/destination/m_goa_main_tv_destination_img_1_l_759_1138.jpg) ; */
+    background-color: #332f2fd3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: unset;
+    width: calc(100vw-(margin));
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    place-content: center;
+    place-items: center;
+    grid-auto-flow: column;
+    color: aliceblue;
+    border: 4px ridge;
+    border-radius: 20px;
+}
+
+.place{
+    place-content: center;
+    place-items: center;
+    text-align: justify;
+    margin: 2rem;
+    padding: 3rem;
+    /* backdrop-filter: blur(7px); */
+}
+
+.title{
+    margin: 1.5rem auto;
+}
+.location_details{
+    font-size:3rem ;
+    text-transform: capitalize;
+    backdrop-filter: blur(20px);
+    border-radius: 2rem;
+}
+
+.place_details{
+    box-sizing: border-box;
+    font-size: 0.4em;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75rem;
+}
+
+.place_img img{
+    box-sizing: border-box;
+    height: 25rem;
+    width: 100% ;
+    border-radius: 2rem;
+    border: 2px ridge white;
+}
+
+
+/* -- ---------------------------------------------------------------------------------------------  */
+
+.ls{
+    margin: 3rem auto;
+    padding: 4rem;
+    font-size: 1.25rem;
+    place-content: center;
+    place-items: center;
+    color: #ffffff;
+}
+
+.overview{
+    line-height: 1.35rem;
+    word-spacing: 0.1rem;   
+    word-wrap: normal;
+}
+
+#ptv, #ttd{
+    margin: 4rem auto;
+}
+
+#card-deck{
+    margin:1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    column-gap: 3.5vw;
+}
+
+.ptv_details, .ttd_details{
+    margin: 2rem auto;
+    height: auto;
+    height: 25rem;
+    width: 18rem;
+    background-color: #01032b;
+    place-content: center;
+    place-items: center;
+    text-align: justify;
+    padding: 1.65rem;
+    border-radius: 2rem;
+    border: 2px solid;
+    
+}
+
+
+.ptv, .ttd{
+    margin: 2rem auto;
+}
+
+.ptv_img img, .ttd_img img{
+    height: 13.5rem; 
+    width: 100%;
+    border: 1px solid;
+    border-radius: 1.5rem;
+}
+.ptv_title, .ttd_title{
+    margin: 1rem auto;
+    font-size: 2.5rem;
+}
+
+
+.ptv_subtitle, .ttd_subtitle{
+    font-size: 1.65rem;
+    margin: 0.7rem auto;
+    letter-spacing: 0.5px;
+}
+
+.ptv_description, .ttd_description{
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.35rem;
+    word-spacing: 0.1rem;
+}
